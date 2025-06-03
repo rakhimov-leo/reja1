@@ -1,0 +1,21 @@
+{
+  "name": "Leo",
+  "profession": "Software Engineer",
+  "age": 30,
+  "residence": "S.Korea",
+  "adress": "S.Korea, Jeonju",
+  "language": ["Uzbek", "Korean", "English"],
+  "skills": ["Html", "Css", "Js", "NodeJS", "Python"],
+  "extra_skills": [
+    "Bootstrap, Materialize",
+    "Styling, Sass",
+    "Django, Flask",
+    "GIT Knowledge"
+  ],
+  "work_place": "IT Company",
+  "service_desc": "The description of the service. If this member is NULL, the description remains unchanged",
+  "about_me": " I'm reliable—I was so consistent in updating patient's charts that I was promoted to a position responsible for training new hires. ",
+  "city": "Karshi",
+  "title": "rerrr",
+  "famous_name": "Leo Messi"
+}

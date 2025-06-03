@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/main.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <title>Portfolio</title>
+  </head>
+
+  <body>
+    <div class="frame">
+      <div class="main_frame">
+        <div class="left_frame">
+          <div class="left_1">
+            <div class="left_1-1">
+              <img
+                src="images/profile.png"
+                width="156px"
+                height="142px"
+                alt=""
+              />
+            </div>
+
+            <div class="left_1-2"><%=user.name%></div>
+
+            <div class="left_1-3"><%=user.profession%></div>
+
+            <div class="left_icons">
+              <a class="link_href" href="">
+                <div class="icon">
+                  <svg
+                    class="icon-1"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </div>
+              </a>
+
+              <a class="link_href" href="">
+                <div class="icon">
+                  <svg
+                    class="icon-2"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="currentColor"
+                      fill-rule="evenodd"
+                      d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </div>
+              </a>
+
+              <a class="link_href" href="">
+                <div class="icon">
+                  <svg
+                    class="icon-3"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M22 5.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.343 8.343 0 0 1-2.605.981A4.13 4.13 0 0 0 15.85 4a4.068 4.068 0 0 0-4.1 4.038c0 .31.035.618.105.919A11.705 11.705 0 0 1 3.4 4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 6.1 13.635a4.192 4.192 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 2 18.184 11.732 11.732 0 0 0 8.291 20 11.502 11.502 0 0 0 19.964 8.5c0-.177 0-.349-.012-.523A8.143 8.143 0 0 0 22 5.892Z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </div>
+              </a>
+
+              <a class="link_href" href="">
+                <div class="icon">
+                  <svg
+                    class="icon-4"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M12.51 8.796v1.697a3.738 3.738 0 0 1 3.288-1.684c3.455 0 4.202 2.16 4.202 4.97V19.5h-3.2v-5.072c0-1.21-.244-2.766-2.128-2.766-1.827 0-2.139 1.317-2.139 2.676V19.5h-3.19V8.796h3.168ZM7.2 6.106a1.61 1.61 0 0 1-.988 1.483 1.595 1.595 0 0 1-1.743-.348A1.607 1.607 0 0 1 5.6 4.5a1.601 1.601 0 0 1 1.6 1.606Z"
+                      clip-rule="evenodd"
+                    />
+                    <path d="M7.2 8.809H4V19.5h3.2V8.809Z" />
+                  </svg>
+                </div>
+              </a>
+
+              <a class="link_href" href="">
+                <div class="icon">
+                  <svg
+                    class="icon-4"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M21.7 8.037a4.26 4.26 0 0 0-.789-1.964 2.84 2.84 0 0 0-1.984-.839c-2.767-.2-6.926-.2-6.926-.2s-4.157 0-6.928.2a2.836 2.836 0 0 0-1.983.839 4.225 4.225 0 0 0-.79 1.965 30.146 30.146 0 0 0-.2 3.206v1.5a30.12 30.12 0 0 0 .2 3.206c.094.712.364 1.39.784 1.972.604.536 1.38.837 2.187.848 1.583.151 6.731.2 6.731.2s4.161 0 6.928-.2a2.844 2.844 0 0 0 1.985-.84 4.27 4.27 0 0 0 .787-1.965 30.12 30.12 0 0 0 .2-3.206v-1.516a30.672 30.672 0 0 0-.202-3.206Zm-11.692 6.554v-5.62l5.4 2.819-5.4 2.801Z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="marginer"></div>
+
+          <div class="left_2">
+            <div class="left_2-1">
+              <span>Age:</span>
+              <p>30</p>
+            </div>
+
+            <div class="left_2-2">
+              <span>Residence:</span>
+              <p>KR</p>
+            </div>
+
+            <div class="left_2-3">
+              <span>Freelance:</span>
+              <p>Available</p>
+            </div>
+
+            <div class="left_2-4">
+              <span>Address:</span>
+              <p>Jeonju,Korea</p>
+            </div>
+          </div>
+          <div class="marginer"></div>
+
+          <div class="left_3">
+            <div class="left_3-1">Languages</div>
+            <div class="left_3-2">
+              <span>Uzbek</span>
+              <p>100%</p>
+            </div>
+            <div class="line1"></div>
+            <div class="yellow1"></div>
+
+            <div class="left_3-3">
+              <span>English</span>
+              <p>90%</p>
+            </div>
+            <div class="line2"></div>
+            <div class="yellow2"></div>
+
+            <div class="left_3-4">
+              <span>Korean</span>
+              <p>80%</p>
+            </div>
+            <div class="line3"></div>
+            <div class="yellow3"></div>
+          </div>
+          <div class="marginer"></div>
+
+          <div class="left_4">
+
+            <div class="left_4-1">Skills</div>
+            <div class="left_4-2">
+              <span>HTML</span>
+              <p>100%</p>
+            </div>
+            <div class="line1"></div>
+            <div class="yellow1"></div>
+
+            <div class="left_4-3">
+              <span>CSS</span>
+              <p>90%</p>
+            </div>
+            <div class="line2"></div>
+            <div class="yellow2"></div>
+
+            <div class="left_4-4">
+              <span>Js</span>
+              <p>80%</p>
+            </div>
+            <div class="line3"></div>
+            <div class="yellow3"></div>
+
+               <div class="left_4-5">
+              <span>PHP</span>
+              <p>80%</p>
+            </div>
+            <div class="line4"></div>
+            <div class="yellow4"></div>
+
+               <div class="left_4-6">
+              <span>WordPress</span>
+              <p>80%</p>
+            </div>
+            <div class="line5"></div>
+            <div class="yellow5"></div>
+          </div>
+          
+          <div class="left_5">
+
+            <div class="left_5-1">Extra Skills</div>
+            <div class="left_5-2">
+              
+              <svg class="programm"
+               aria-hidden="true" xmlns="http://www.w3.org/2000/svg" 
+               width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+  <path d="M12 7.205c4.418 0 8-1.165 8-2.602C20 3.165 16.418 2 12 2S4 3.165 4 4.603c0 1.437 3.582 2.602 8 2.602ZM12 22c4.963 0 8-1.686 8-2.603v-4.404c-.052.032-.112.06-.165.09a7.75 7.75 0 0 1-.745.387c-.193.088-.394.173-.6.253-.063.024-.124.05-.189.073a18.934 18.934 0 0 1-6.3.998c-2.135.027-4.26-.31-6.3-.998-.065-.024-.126-.05-.189-.073a10.143 10.143 0 0 1-.852-.373 7.75 7.75 0 0 1-.493-.267c-.053-.03-.113-.058-.165-.09v4.404C4 20.315 7.037 22 12 22Zm7.09-13.928a9.91 9.91 0 0 1-.6.253c-.063.025-.124.05-.189.074a18.935 18.935 0 0 1-6.3.998c-2.135.027-4.26-.31-6.3-.998-.065-.024-.126-.05-.189-.074a10.163 10.163 0 0 1-.852-.372 7.816 7.816 0 0 1-.493-.268c-.055-.03-.115-.058-.167-.09V12c0 .917 3.037 2.603 8 2.603s8-1.686 8-2.603V7.596c-.052.031-.112.059-.165.09a7.816 7.816 0 0 1-.745.386Z"/>
+</svg>
+
+              <p>Bootstrap, Materialize</p>
+            </div>
+          
+            <div class="left_5-3">
+              <svg class="programm" 
+              aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+               width="24" height="24" fill="none" viewBox="0 0 24 24">
+  <path stroke="currentColor" stroke-linecap="round"
+   stroke-linejoin="round" stroke-width="2" 
+   d="M19 6c0 1.657-3.134 3-7 3S5 7.657 5 6m14 0c0-1.657-3.134-3-7-3S5 4.343 5 6m14 0v6M5 6v6m0 0c0 1.657 3.134 3 7 3s7-1.343 7-3M5 12v6c0 1.657 3.134 3 7 3s7-1.343 7-3v-6"/>
+</svg>
+
+              <p>Stylus, Sass, Less</p>
+            </div>
+            
+            <div class="left_5-4">
+              <svg class="programm" 
+              aria-hidden="true" xmlns="http://www.w3.org/2000/svg" 
+              width="24" height="24" fill="none" viewBox="0 0 24 24">
+  <path fill="currentColor" d="M9.98189 4.50602c1.24881-.67469 2.78741-.67469 4.03621 0l3.9638 2.14148c.3634.19632.6862.44109.9612.72273l-6.9288 3.60207L5.20654 7.225c.2403-.22108.51215-.41573.81157-.5775l3.96378-2.14148ZM4.16678 8.84364C4.05757 9.18783 4 9.5493 4 9.91844v4.28296c0 1.3494.7693 2.5963 2.01811 3.2709l3.96378 2.1415c.32051.1732.66011.3019 1.00901.3862v-7.4L4.16678 8.84364ZM13.009 20c.3489-.0843.6886-.213 1.0091-.3862l3.9638-2.1415C19.2307 16.7977 20 15.5508 20 14.2014V9.91844c0-.30001-.038-.59496-.1109-.87967L13.009 12.6155V20Z"/>
+</svg>
+
+              <p>Gulp, Webpack, Grunt</p>
+            </div>
+            
+               <div class="left_5-5">
+             <svg class="programm"  
+             aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" 
+             height="24" fill="none" viewBox="0 0 24 24">
+  <path fill="currentColor" 
+  d="m20.7011 10.1255-.0253-.0672-2.4501-6.63953c-.0498-.13013-.1381-.24053-.2521-.31534-.1141-.07354-.2472-.10896-.3812-.10147-.1341.00748-.2628.05751-.3686.14332-.1047.08828-.1806.2079-.2175.34259l-1.6543 5.2556H8.65334l-1.65429-5.2556c-.03588-.13542-.11197-.25564-.21745-.34356-.10584-.08582-.23449-.13584-.36857-.14333-.13409-.00748-.26716.02794-.38125.10148-.11376.07511-.20195.18541-.25213.31534l-2.45472 6.6367-.02437.0671c-.35269.9569-.39623 2.007-.12404 2.9918.27219.9849.84535 1.8511 1.63305 2.4682l.00844.0068.02249.0166 3.73223 2.9022 1.84647 1.4512 1.1247.8817c.1316.1037.2922.1599.4574.1599.1652 0 .3258-.0562.4574-.1599l1.1247-.8817 1.8464-1.4512 3.7548-2.9198.0093-.0077c.786-.6172 1.3578-1.4826 1.6296-2.4661.2717-.9835.2288-2.0321-.1224-2.9881Z"/>
+</svg>
+
+              <p>GIT Knowledge</p>
+            </div>
+            
+          </div>
+<div class="marginer"></div>
+        </div>
+        <div class="midd_frame">
+          <div class="midd_1">
+            <div class="midd_1-left">
+              <div class="type1">Doctor neurologistsin OHSU Hospital </div>
+              <div class="type2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                 Et, volutpat feugiat placerat lobortis.
+                 Natoque rutrum semper sed suspendisse nunc lectus.</div>
+              
+              <a href="">HIRE ME</a>
+            
+            </div>
+
+            <div class="midd_1-right">
+              <img src="images/profile.png" width="450px" height="446px" alt="">
+            </div>
+          </div>
+
+          <div class="midd_2">
+            <div class="midd_2-1">
+              <span>My Services</span>
+              <p>Amet minim mollit non deserunt ullamco est 
+                sit aliqua dolor do amet sint. 
+                Velit officia consequat duis enim velit mollit. 
+                lorem ipsum</p>
+            </div>
+            <div class="taxlash">
+              <div class="midd_2-2">
+              <div class="karobka">
+               <svg class="pc_rasm" 
+               aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                width="24" height="24" fill="none" viewBox="0 0 24 24">
+  <path stroke="currentColor" stroke-linecap="round" 
+  stroke-linejoin="round" stroke-width="2" 
+  d="M12 15v5m-3 0h6M4 11h16M5 15h14a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1Z"/>
+</svg>
+
+                <span>Web Development</span>
+                <p>Blog, E-commerce</p>
+              </div>
+            </div>
+            <div class="midd_2-2">
+              <div class="karobka">
+               <svg class="pc_rasm" 
+               aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                width="24" height="24" fill="none" viewBox="0 0 24 24">
+  <path stroke="currentColor" stroke-linecap="round" 
+  stroke-linejoin="round" stroke-width="2" 
+  d="M12 15v5m-3 0h6M4 11h16M5 15h14a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1Z"/>
+</svg>
+
+                <span>Web Development</span>
+                <p>Blog, E-commerce</p>
+              </div>
+            </div>
+            <div class="midd_2-2">
+              <div class="karobka">
+               <svg class="pc_rasm" 
+               aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                width="24" height="24" fill="none" viewBox="0 0 24 24">
+  <path stroke="currentColor" stroke-linecap="round" 
+  stroke-linejoin="round" stroke-width="2" 
+  d="M12 15v5m-3 0h6M4 11h16M5 15h14a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1Z"/>
+</svg>
+
+                <span>Web Development</span>
+                <p>Blog, E-commerce</p>
+              </div>
+            </div>
+            <div class="midd_2-2">
+              <div class="karobka">
+               <svg class="pc_rasm" 
+               aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                width="24" height="24" fill="none" viewBox="0 0 24 24">
+  <path stroke="currentColor" stroke-linecap="round" 
+  stroke-linejoin="round" stroke-width="2" 
+  d="M12 15v5m-3 0h6M4 11h16M5 15h14a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1Z"/>
+</svg>
+
+                <span>Web Development</span>
+                <p>Blog, E-commerce</p>
+              </div>
+            </div>
+            <div class="midd_2-2">
+              <div class="karobka">
+               <svg class="pc_rasm" 
+               aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                width="24" height="24" fill="none" viewBox="0 0 24 24">
+  <path stroke="currentColor" stroke-linecap="round" 
+  stroke-linejoin="round" stroke-width="2" 
+  d="M12 15v5m-3 0h6M4 11h16M5 15h14a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1Z"/>
+</svg>
+
+                <span>Web Development</span>
+                <p>Blog, E-commerce</p>
+              </div>
+            </div>
+            <div class="midd_2-2">
+              <div class="karobka">
+               <svg class="pc_rasm" 
+               aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                width="24" height="24" fill="none" viewBox="0 0 24 24">
+  <path stroke="currentColor" stroke-linecap="round" 
+  stroke-linejoin="round" stroke-width="2" 
+  d="M12 15v5m-3 0h6M4 11h16M5 15h14a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1Z"/>
+</svg>
+
+                <span>Web Development</span>
+                <p>Blog, E-commerce</p>
+              </div>
+            </div>
+            </div>
+
+            
+          </div>
+        </div>
+        <div class="right_frame">
+          <div class="symbole1">
+            <svg class="1" 
+            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" 
+            width="70" height="70" fill="none" viewBox="0 0 24 24">
+  <path stroke="currentColor" stroke-linecap="round" 
+  stroke-linejoin="round" stroke-width="2" 
+  d="m4 12 8-8 8 8M6 10.5V19a1 1 0 0 0 1 1h3v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h3a1 1 0 0 0 1-1v-8.5"/>
+</svg>
+
+          </div>
+          
+        </div>
+        </div>
+        
+      </div>
+    </div>
+  </body>
+</html>
