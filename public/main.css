@@ -887,10 +887,28 @@
 }
 
 .right_frame .symbole1 {
-  margin-top: 350px;
+  margin-top: 30px;
   position: relative;
   color: #ffb400;
   width: 10px;
   height: 100px;
-  margin-right: 50px;
+  margin-right: 20px;
+}
+
+.right_frame .symbole2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  margin-top: 200px;
+  width: 65px;
+  height: 500px;
+}
+
+.symbole2 .home {
+  position: relative;
+  display: flex;
+  margin-left: 10px;
 }
