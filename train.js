@@ -146,18 +146,36 @@
 
 //             masalani yechimi:
 
-console.log("TASK A.ni birgalikda yechamiz");
+// console.log("TASK A.ni birgalikda yechamiz");
 
-function countLetter(letter, word) {
-  let count = 0;
-  for (let char of word) {
-    if (char === letter) {
-      count++;
-    }
-  }
-  return count;
-}
+// function countLetter(letter, word) {
+//   let count = 0;
+//   for (let char of word) {
+//     if (char === letter) {
+//       count++;
+//     }
+//   }
+//   return count;
+// }
 
-console.log(
-  countLetter("a", "Elektromexanizatsiyalashtraololmaganligingizdandurda")
-);
+// console.log(
+//   countLetter("a", "Elektromexanizatsiyalashtraololmaganligingizdandurda")
+// );
+
+// DEFINE
+// function qoldiqliBolish(a, b, callback) {
+//   if (b === 0) {
+//     callback("Mahraj nolga teng bololmaydi", null);
+//   } else {
+//     callback(null, a % b);
+//   }
+// }
+
+// // CALL
+// qoldiqliBolish(10, 0, (err, data) => {
+//   if (err) {
+//     console.log("Error:", err);
+//   } else {
+//     console.log("Data:", data);
+//   }
+// });
