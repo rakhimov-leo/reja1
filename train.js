@@ -179,3 +179,19 @@
 //     console.log("Data:", data);
 //   }
 // });
+
+const b = "jus7be4appy89";
+let kerakRaqamlar = [];
+
+function checkDigitsNums(kelayotganMalumot) {
+  // converting to array
+  const newArr = [...kelayotganMalumot]; // spread operator
+
+  for (let i = 0; i < newArr.length; i++) {
+    if (!isNaN(newArr[i]) && newArr[i] >= "0" && newArr[i] <= "9") {
+      kerakRaqamlar.push(newArr[i]);
+    }
+  }
+  console.log(kerakRaqamlar.length);
+}
+checkDigitsNums(b);
