@@ -195,21 +195,3 @@ function checkDigitsNums(incomingString) {
   return console.log(expectedNum.length);
 }
 checkDigitsNums(b);
-
-// const b = 'gvu4d5dwa54665ghi55';
-// let shodmonningRaqamlari = [];
-
-// function checkDigitsNums(kelayotganMalumot) {
-//   // converting to array
-//   const newArr = [...kelayotganMalumot]; // spread operator
-
-//   for (let i = 0; i < newArr.length; i++) {
-//     if (!isNaN(newArr[i]) && newArr[i] >= '0' && newArr[i] <= '9') {
-//       shodmonningRaqamlari.push(newArr[i]);
-//     }
-//   }
-//   return shodmonningRaqamlari.length;
-// }
-// checkDigitsNums(b);
-// const numberCnt = checkDigitsNums(b);
-// console.log(numberCnt);
