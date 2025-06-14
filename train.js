@@ -1,5 +1,29 @@
 console.log("__________TRAIN AREA!_____________");
 
+//                           D-TASK:
+
+// Shunday function tuzing, u 2ta string parametr ega bolsin, hamda agar har ikkala string bir hil harflardan iborat bolsa true aks holda false qaytarsin
+
+// MASALAN checkContent("mitgroup", "gmtiprou") return qiladi true;
+
+// yechim:
+
+function checkContent(a, b) {
+  if (a.length !== b.length) return false;
+
+  const sortedA = a.split("").sort().join("");
+  const sortedB = b.split("").sort().join("");
+  if (sortedA === sortedB) {
+    return true;
+  } else {
+    return false;
+  }
+}
+console.log(checkContent("like", "lkie"));
+// console.log(checkContent("olamm", "olma"));
+
+/////////////////////////////////////////////////////////////////////////
+
 /*                       MITASK-C 
 
 Shunday class tuzing nomi Shop, 
@@ -18,51 +42,51 @@ shop.qoldiq() return hozir 20:40da 4ta non,
 
 // YECHIMI:
 
-const moment = require("moment");
+// const moment = require("moment");
 
-class Shop {
-  constructor(non, lagmon, cola) {
-    this.non = non;
-    this.lagmon = lagmon;
-    this.cola = cola;
+// class Shop {
+//   constructor(non, lagmon, cola) {
+//     this.non = non;
+//     this.lagmon = lagmon;
+//     this.cola = cola;
 
-    const time = moment().format("HH:mm:ss");
-    this.time = moment().format("HH:mm:ss");
-  }
+//     const time = moment().format("HH:mm:ss");
+//     this.time = moment().format("HH:mm:ss");
+//   }
 
-  sotish(productsName, miqdor) {
-    if (this[productsName] < miqdor) {
-      console.log(
-        `*${this.time}* Yetarlicha ${productsName} yo'q. jami: ${this[productsName]}ta ${productsName} bor`
-      );
-      return;
-    }
-    this[productsName] -= miqdor;
-    console.log(`*${this.time}* ${miqdor}ta ${productsName} sotildi`);
-  }
+//   sotish(productsName, miqdor) {
+//     if (this[productsName] < miqdor) {
+//       console.log(
+//         `*${this.time}* Yetarlicha ${productsName} yo'q. jami: ${this[productsName]}ta ${productsName} bor`
+//       );
+//       return;
+//     }
+//     this[productsName] -= miqdor;
+//     console.log(`*${this.time}* ${miqdor}ta ${productsName} sotildi`);
+//   }
 
-  qabul(productsName, miqdor) {
-    this[productsName] += miqdor;
-    console.log(
-      `*${this.time}* ${miqdor}ta ${productsName} qoshildi: jami:${this[productsName]}ta ${productsName} bor`
-    );
-  }
+//   qabul(productsName, miqdor) {
+//     this[productsName] += miqdor;
+//     console.log(
+//       `*${this.time}* ${miqdor}ta ${productsName} qoshildi: jami:${this[productsName]}ta ${productsName} bor`
+//     );
+//   }
 
-  qoldiq() {
-    console.log(
-      `*${this.time}* Skladda ${this.non}ta non, ${this.lagmon}ta lagmon va ${this.cola}ta cola mavjud.`
-    );
-  }
-  greet() {
-    console.log("Sizga ma'lumot berishdan xursandman.");
-  }
-}
+//   qoldiq() {
+//     console.log(
+//       `*${this.time}* Skladda ${this.non}ta non, ${this.lagmon}ta lagmon va ${this.cola}ta cola mavjud.`
+//     );
+//   }
+//   greet() {
+//     console.log("Sizga ma'lumot berishdan xursandman.");
+//   }
+// }
 
-const myShop = new Shop(4, 5, 2);
+// const myShop = new Shop(4, 5, 2);
 
-myShop.sotish("non", 3);
-myShop.qabul("cola", 4);
-myShop.qoldiq();
+// myShop.sotish("non", 3);
+// myShop.qabul("cola", 4);
+// myShop.qoldiq();
 
 /////////////////////////////////////////////////////////////////////////
 
@@ -105,7 +129,8 @@ const result = countLetter("a", "assalomu alekum");
 console.log(result);
 
 ///////////////////
-
+*/
+/*
                        A-TASK:
 
 Shunday 2 parametrli function tuzing,
@@ -132,7 +157,7 @@ console.log(
   countLetter("a", "Elektromexanizatsiyalashtraololmaganligingizdandurda")
 );
 
-DEFINE
+DEFINE 
 function qoldiqliBolish(a, b, callback) {
   if (b === 0) {
     callback("Mahraj nolga teng bololmaydi", null);
