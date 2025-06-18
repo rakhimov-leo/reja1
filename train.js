@@ -1,5 +1,28 @@
 console.log("__________TRAIN AREA!_____________");
 
+//                   TASK-F
+/*
+Yagona string argumentga ega findDoublers nomli function tuzing
+Agar stringda bittadan ortiq bir xil harflar ishtirok etgan bo'lsa
+true yokida false natija qaytarsin.
+
+MASALAN: findDoublers("hello"); natija true qaytadi. 
+Sababi ikki marotaba takrorlangan 'll' harfi mavjud!
+*/
+
+function findDoublers(str) {
+  const letters = {};
+  for (let char of str) {
+    if (letters[char]) {
+      return true;
+    }
+    letters[char] = true;
+  }
+  return false;
+}
+
+console.log(findDoublers("MIT30"));
+
 //                      E-TASK
 /*
 Shunday function tuzing, u bitta 
@@ -8,10 +31,10 @@ stringni teskari qilib return qilsin.
 MASALAN: getReverse("hello") return 
 qilsin "olleh"  */
 
-function reverseWord(a) {
-  return a.split("").reverse().join("");
-}
-console.log(reverseWord("galaxy"));
+// function reverseWord(a) {
+//   return a.split("").reverse().join("");
+// }
+// console.log(reverseWord("galaxy"));
 
 //                           D-TASK:
 
